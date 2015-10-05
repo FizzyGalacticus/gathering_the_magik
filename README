@@ -1,1 +1,3 @@
-[This is another test.](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+{{html
+<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is yet another test.</a></p>
+}}
