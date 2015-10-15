@@ -1,3 +1,7 @@
+/*VARIABLES*/
+--background: #222222;
+--special: A51026;
+
 /*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
@@ -7,12 +11,11 @@
 		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
 		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
 		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
-https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.TTF
 }
 
 /*NAVIGATION*/
 .nav-tabs a{
-	color: #a51026;
+	color: var(--special);
 	font-family: 'Magik';
 }
 
@@ -23,19 +26,19 @@ https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repos
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
 	background-color: #a51026;
-	color: #222222;
-	border-color: #a51026;
+	color: var(--background);
+	border-color: var(--special);
 }
 
 .nav-tabs {
-	border-bottom: 1px solid #a51026;
+	border-bottom: 1px solid var(--special);
 }
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:hover {
-	background-color: #a51026;
-	color: #222222;
-	border-color: #a51026;
+	background-color: var(--special);
+	color: var(--background);
+	border-color: var(--special);
 }
 
 /*.tab-content {
