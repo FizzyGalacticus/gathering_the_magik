@@ -1,8 +1,11 @@
 @font-face {
 	font-family: 'Magik';
-	/*font-style: normal;*/
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.woff') format('woff'),
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.ttf') format('truetype');
+	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.eot'); /* IE9 Compat Modes */
+	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 .nav-tabs a{
 	color: #a51026;
