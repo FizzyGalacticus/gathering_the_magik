@@ -37,7 +37,7 @@
 	border-color: #a51026;
 }
 
-.coolFont {
+.table > .thead > .tr.coolFont > th {
 	font-family: 'Magik';
 }
 
