@@ -37,6 +37,10 @@
 	border-color: #a51026;
 }
 
+.coolFont {
+	font-family: 'Magik';
+}
+
 /*.tab-content {
 	background: url("https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MTG.jpg");
 	background-color: #222222;
