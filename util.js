@@ -3,4 +3,6 @@ function getPage(id) {
 	mainUrl += (id+'.html');
 
 	$('#' + id).load(mainUrl);
+
+	alert('Trying to stuff contents of ' + mainUrl + ' into div: ' + id);
 }
