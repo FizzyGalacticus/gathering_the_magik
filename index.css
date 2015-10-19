@@ -19,8 +19,8 @@
     background-color: #efefef;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus {
+.nav > li.active > a,
+.nav > li.active > a:focus {
 	background-color: #a51026;
 	color: #222222;
 	border-color: #a51026;
