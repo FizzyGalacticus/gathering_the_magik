@@ -37,6 +37,10 @@
 	border-color: #a51026;
 }
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
