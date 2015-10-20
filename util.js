@@ -24,6 +24,8 @@ $(document).on("keypress", function(e) {
 	}
 });
 
+$('base').attr('href', 'https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/');
+
 $.ajax({
     url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
     async:false,            //this is the trick
