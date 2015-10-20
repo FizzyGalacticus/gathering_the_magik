@@ -23,3 +23,11 @@ $(document).on("keypress", function(e) {
 		premium = true;
 	}
 });
+
+$.ajax({
+    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
+    async:false,            //this is the trick
+    success : function(result){
+		document.body.innerHTML = result;
+	} 
+});
