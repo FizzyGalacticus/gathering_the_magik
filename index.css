@@ -83,12 +83,12 @@ table > thead > .coolFont > th {
     -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
     border-image-slice: 25%;
-    background-color: #D2B340;
+    background-color: #B79A31;
 }
 
 /*THEME*/
-.navbar-header, .panel-heading {
-	background-color: #9F9D5E;
+.navbar-header, .navbar-collapse, .panel-heading {
+	background-color: #E9CC5F;
 }
 
 .panel-body {
