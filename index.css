@@ -52,7 +52,7 @@
 	background-color: #a51026;
 }
 
-.navbar-fixed-bottom > .container > .navbar-text > .badge {
+footer > .container > .navbar-text > .badge {
 	display: block;
 	position: absolute;
 	top: -20px;
