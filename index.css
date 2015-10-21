@@ -52,6 +52,7 @@
 	background-color: #a51026;
 }
 
+/*CONTRIBUTION TABLE*/
 table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
@@ -74,3 +75,12 @@ table > thead > .coolFont > th {
 	width: 75%;
 	margin: 15px auto;
 }*/
+
+/*BORDER*/
+#border {
+    border: 10px solid transparent;
+    -webkit-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
+    border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
+    border-image-slice: 25%;
+}
