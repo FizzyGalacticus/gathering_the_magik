@@ -1,42 +1,63 @@
+/*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.eot'); /* IE9 Compat Modes */
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot'); /* IE9 Compat Modes */
+	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+/*NAVIGATION*/
 .nav-tabs a{
 	color: #a51026;
 	font-family: 'Magik';
 }
+
 .table-striped > tbody > tr:hover > td {
     background-color: #efefef;
 }
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
 	background-color: #a51026;
-	color: #222222;
 	border-color: #a51026;
+	color: #222222;
 }
+
+.nav-tabs > .dropdown > ul > li.active > a,
+.nav-tabs > .dropdown > ul > li.active > a:focus {
+	background-color: #222222;
+	border-color: #222222;
+	color: #a51026;
+}
+
 .nav-tabs {
 	border-bottom: 1px solid #a51026;
 }
+
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:hover {
 	background-color: #a51026;
 	color: #222222;
 	border-color: #a51026;
 }
-.panel-title > a {
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	background-color: #a51026;
+}
+
+/*CONTRIBUTION TABLE*/
+table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
-/*.panel {
-	width: 75%;
-	margin: 15px auto;
-}
-.tab-content {
+
+/*.tab-content {
 	background: url("https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MTG.jpg");
 	background-color: #222222;
 	background-repeat: no-repeat;
@@ -44,3 +65,22 @@
 	background-size: 100% auto;
 	background-attachment: fixed;
 }*/
+
+/*COLLAPSE PANELS*/
+.panel-title > a {
+	font-family: 'Magik';
+}
+
+/*.panel {
+	width: 75%;
+	margin: 15px auto;
+}*/
+
+/*BORDER*/
+#border {
+    border: 10px solid transparent;
+    -webkit-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
+    border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
+    border-image-slice: 25%;
+}

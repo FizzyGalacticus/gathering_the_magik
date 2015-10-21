@@ -1,268 +1,112 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Gathering the Magik</title>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.css" media="screen" />
+<div id="border">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Gathering the Magik</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/border/raw/index.css" media="screen" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/util.js" type="text/javascript"></script>
 
-<!-- START OF NAVIGATION -->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="pull-left"><img src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/logo.png"></a>
-        </div>
+	<!-- START OF NAVIGATION -->
+	<nav class="navbar navbar-inverse">
+	    <div class="container-fluid">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="#" class="pull-left"><img src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/logo.png"></a>
+	        </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	        <ul class="nav nav-tabs">
-	            <li class="active"><a data-toggle="tab" href="#brainstormingAnalysis">Analysis</a></li>
-	            <li><a data-toggle="tab" href="#contributions">Contributions</a></li>
-	        </ul>
-	    </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<!-- END OF NAVIGATION -->
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		        <ul class="nav nav-tabs">
+		            <li class="active"><a data-toggle="tab" href="#home" onclick="getPage('home');">Home</a></li>
 
-<!-- START OF TAB CONTENT -->
-<div class="tab-content">
-	<!-- START OF BRAINSTORMING ANALYSIS -->
-	<div id="brainstormingAnalysis" class="tab-pane fade in active clearfix">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Introduction</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseOne" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>	Our group decided to conceptualize an application that allows gamers of all forms find others with similar game interests. This can range from old school pen-and-paper games to video games. Our application would take statistics from each user and use them to find viable matches and even allow them to play games with each other, whether it be on a digital device or in person.</p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+					<li class="dropdown">
+					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+					    <ul class="dropdown-menu" role="menu">
+					        <li><a data-toggle="tab" href="#free" onclick="getPage('free');">Free</a></li>
+					        <li><a data-toggle="tab" href="#premium" onclick="getPage('premium');">Premium</a></li>
+					    </ul>
+					</li>
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Group Passing</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseTwo" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>	Going into this stage, we each had to come up with an idea for an application or system that we wished to be a part of designing. However the only control over that idea we had was the initial thought. All of our classmates quickly expanded upon each idea, pushing them toward new and exciting directions. Many different ways at approaching the problem or idea meant that the whole idea could evolve into something greater than the sum of its parts.</p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+					<li class="dropdown">
+					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+					    <ul class="dropdown-menu" role="menu">
+					        <li><a data-toggle="tab" href="#contact" onclick="getPage('contact');">Contact Us</a></li>
+					        <li><a data-toggle="tab" href="#faq" onclick="getPage('faq');">FAQ</a></li>
+					    </ul>
+					</li>
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Post-Up</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseThree" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>	The rapid generation of ideas was very helpful when attempting to flesh out our base idea. This resulted with each of us steering the project the way we think it should go. Not all group members had the same initial thoughts on this. While one group member was considering all the needs of the user, another was thinking about how it could interact with local businesses.</p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+					<li class="dropdown">
+					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News<span class="caret"></span></a>
+					    <ul class="dropdown-menu" role="menu">
+					        <li><a data-toggle="tab" href="#media" onclick="getPage('media');">In The Media</a></li>
+					        <li><a data-toggle="tab" href="#updates" onclick="getPage('updates');">Updates</a></li>
+					    </ul>
+					</li>
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Affinity Diagram</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseFour" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>During this phase, our group posted all of the post-it notes to the whiteboard and silently moved them into specific categories based off of their functions. After approximately ten minutes, we were allowed to talk with one-another and determine if the right choices were made, or to make adjustments as necessary. These were our results: </p>
-					<table class="table table-striped">
-					    <thead>
-					        <tr>
-					        	<td></td>
-					            <th>Utility</th>
-					            <th>Features</th>
-					            <th>Money</th>
-					            <th>Social</th>
-					            <th>Comm</th>
-					        </tr>
-					    </thead>
-					    <tbody>
-					        <tr>
-					        	<td>1</td>
-					            <td>Achievements</td>
-					            <td>Common Connections</td>
-					            <td>In-App Messaging</td>
-					            <td>Local Events</td>
-					            <td>Game Advertizing</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>2</td>
-					            <td>Area Invite</td>
-					            <td>Find Local Players</td>
-					            <td>Online Bulletin Board</td>
-					            <td>Web Interface</td>
-					            <td>Local Shops</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>3</td>
-					            <td>Desktop App</td>
-					            <td>Player Created Rules</td>
-					            <td></td>
-					            <td></td>
-					            <td>Premium Features</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>4</td>
-					            <td>Implement Other Games</td>
-					            <td>Rank Pairing</td>
-					            <td></td>
-					            <td></td>
-					            <td>Sell Old Games</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>5</td>
-					            <td>Matchmaking</td>
-					            <td>Recommendations</td>
-					            <td></td>
-					            <td></td>
-					            <td></td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>6</td>
-					            <td>Preferences</td>
-					            <td>Wagers</td>
-					            <td></td>
-					            <td></td>
-					            <td></td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					            <td>7</td>
-					            <td>Statistics</td>
-					            <td></td>
-					            <td></td>
-					            <td></td>
-					            <td></td>
-					        </tr>
-					    </tbody>
-					</table>	
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+					<li class="dropdown">
+					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<span class="caret"></span></a>
+					    <ul class="dropdown-menu" role="menu">
+					        <li><a data-toggle="tab" href="#analysis" onclick="getPage('analysis');">Analysis</a></li>
+					        <li><a data-toggle="tab" href="#contributions" onclick="getPage('contributions');">Contributions</a></li>
+					        <li><a data-toggle="tab" href="#sources" onclick="getPage('sources');">Sources</a></li>
+					    </ul>
+					</li>
+		        </ul>
+		    </div><!-- /.navbar-collapse -->
+	    </div><!-- /.container-fluid -->
+	</nav>
+	<!-- END OF NAVIGATION -->
+	
+	<!-- START OF TAB CONTENT -->
+	<div class="tab-content">
+		<!-- START OF HOME -->
+		<div id="home" class="tab-pane fade in active clearfix"><script type="text/javascript">getPage('home');</script></div>
+		<!-- END OF HOME -->
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Bull's-eye Diagram</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseFive" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>	With the creation of the Bull’s-eye Diagram, we were able to get a better idea of what kind of groups would be affected by the usage of our app. From greatest to least, we grouped them into specific categories. While we knew that our innermost group would be composed of gamers in general, there was some confusion on what it means to be a direct or indirect stakeholder. After some deliberation, we were able to come out with a clear idea of what types of audiences fall into each group.</p>
-					<p><img class="bullseye" width="75%" height="75%" src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/Bullseye.png"></p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+		<!-- START OF FREE -->
+		<div id="free" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF FREE -->
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Forced Ranking</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="collapseSix" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<p>	The forced ranking process allowed our group to prioritize features that would push our product in the direction we would like and not just sit on a smattering of concepts. It also assisted with weeding out ideas that were either ill thought or did not fit in our vision. Some ideas, although good, were too separated from our base application to be compatible with the rest the project.</p>
+		<!-- START OF PREMIUM -->
+		<div id="premium" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF PREMIUM -->
 
-					<table class="table table-striped">
-					    <thead>
-					        <tr>
-					            <th></th>
-					            <th>Top Features</th>
-					        </tr>
-					    </thead>
-					    <tbody>
-					        <tr>
-					            <td>1</td>
-					            <td>Finding Local Players</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					        	<td>2</td>
-					            <td>Matchmaking</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					        	<td>3</td>
-					            <td>Preferences</td>
-					        </tr>
-					    </tbody>
-					    <tbody>
-					        <tr>
-					        	<td>4</td>
-					            <td>Common Connections With Friends</td>
-					        </tr>
-					    </tbody>
-					</table>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
+		<!-- START OF CONTACT -->
+		<div id="contact" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF CONTACT -->
+
+		<!-- START OF FAQ -->
+		<div id="faq" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF FAQ -->
+
+		<!-- START OF MEDIA -->
+		<div id="media" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF MEDIA -->
+
+		<!-- START OF UPDATES -->
+		<div id="updates" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF UPDATES -->
+
+		<!-- START OF BRAINSTORMING ANALYSIS -->
+		<div id="analysis" class="tab-pane fade in active clearfix"></div>
+		<!-- END OF BRAINSTORMING ANALYSIS -->
+		
+		<!-- START OF CONTRIBUTIONS -->
+		<div id="contributions" class="tab-pane fade clearfix"></div>
+		<!-- END OF CONTRIBUTIONS -->
+		
+		<!-- START OF SOURCES -->
+		<div id="sources" class="tab-pane fade clearfix"></div>
+		<!-- END OF SOURCES -->
 	</div>
-	<!-- END OF BRAINSTORMING ANALYSIS -->
-
-	<!-- START OF CONTRIBUTIONS -->
-	<div id="contributions" class="tab-pane fade clearfix">
-		<table class="table table-striped">
-		    <thead>
-		        <tr>
-		            <th>Assignment</th>
-		            <th>Dustin Dodson</th>
-		            <th>Dylan Tucker</th>
-		            <th>Josh Guerrero</th>
-		            <th>Scott Corcoran</th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		        <tr>
-		            <td>Brainstorm Analysis</td>
-		            <td>25%</td>
-		            <td>25%</td>
-		            <td>25%</td>
-		            <td>25%</td>
-		        </tr>
-		    </tbody>
-		    <tbody>
-		        <tr>
-		            <td><b>Total</b></td>
-		            <td>25%</td>
-		            <td>25%</td>
-		            <td>25%</td>
-		            <td>25%</td>
-		        </tr>
-		    </tbody>
-		</table>	
-	</div>
-	<!-- END OF CONTRIBUTIONS -->
+	<!-- END OF TAB CONTENT -->
 </div>
-<!-- END OF TAB CONTENT -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

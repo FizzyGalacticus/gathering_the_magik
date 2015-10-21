@@ -1,0 +1,45 @@
+These are some of the ideas we discussed adding/
+
+Drop down menu for the main page for each main section leading 
+to potential sub sections
+EX. social drop down menu->forum/chat/events then choose one to
+go to its own page
+
+
+Stuff for front Page
+{
+Intro/Splash Page
+User testiments
+}
+
+Premium Fatures
+{
+Sub persrsion 
+single payment version
+}
+
+News
+{
+news
+updates
+}
+
+Features
+{
+Demo -tab list of them videos?
+invision page
+list of features
+}
+
+Support (PREMIUM FEATURE)
+{
+Contact Us //almost imposible
+Support
+}
+
+forum (Premium)
+{
+Supplement messaging 
+set up events
+}
+
