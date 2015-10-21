@@ -52,25 +52,6 @@
 	background-color: #a51026;
 }
 
-/*FOOTER*/
-.foot > .container > .pull-right > .badge {
-	display: block;
-	position: absolute;
-	top: -20px;
-	right: -25px;
-	line-height: 16px;
-	height: 16px;
-	padding: 0 5px;
-	color: black;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 10px;
-	border-color: #4E482A;
-	background-color: #B9A870;
-}
-
 /*CONTRIBUTION TABLE*/
 table > thead > .coolFont > th {
 	font-family: 'Magik';
