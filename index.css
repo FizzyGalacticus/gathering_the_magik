@@ -53,7 +53,7 @@
 }
 
 /*FOOTER*/
-.footer > .container > .pull-right > .badge {
+.foot > .container > .pull-right > .badge {
 	display: block;
 	position: absolute;
 	top: -20px;
