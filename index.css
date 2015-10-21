@@ -94,3 +94,7 @@ table > thead > .coolFont > th {
 .panel-body {
 	background-color: #D5DBBD;
 }
+
+* {
+	border-color: black;
+}
