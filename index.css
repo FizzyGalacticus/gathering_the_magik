@@ -52,7 +52,8 @@
 	background-color: #a51026;
 }
 
-footer > .container > .pull-right > .badge {
+/*FOOTER*/
+.footer > .container > .pull-right > .badge {
 	display: block;
 	position: absolute;
 	top: -20px;
