@@ -30,7 +30,7 @@
     -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
     border-image-slice: 25%;
-    background-color: --background-color;
+    background-color: var(--background-color);
 }
 
 .nav-tabs > a, table > thead > .coolFont > th, .panel-title > a {
@@ -42,28 +42,28 @@
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:hover,
 .dropdown-menu {
-	background-color: --header-color-inverse;
-	border-color: --header-color-inverse;
-	color: --header-text-color-inverse;
+	background-color: var(--header-color-inverse);
+	border-color: var(--header-color-inverse);
+	color: var(--header-text-color-inverse);
 }
 
 .nav-tabs > .dropdown > ul > li.active > a,
 .nav-tabs > .dropdown > ul > li.active > a:focus {
-	background-color: --header-color;
-	border-color: --header-color;
-	color: --header-text-color;
+	background-color: var(--header-color);
+	border-color: var(--header-color);
+	color: var(--header-text-color);
 }
 
 .nav-tabs {
-	border-bottom: 1px solid --header-color-inverse;
+	border-bottom: 1px solid var(--header-color-inverse);
 }
 
 .container-fluid, .panel-heading, thead {
-	background-color: --background-color;
+	background-color: var(--background-color);
 }
 
 .panel-body {
-	background-color: --section-color;
+	background-color: var(--section-color);
 }
 
 .table-striped > tbody > tr:hover > td {
