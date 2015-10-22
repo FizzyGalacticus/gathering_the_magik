@@ -1,13 +1,13 @@
 /*VARIABLES*/
 :root {
 	border-color: black;
-	--background-color: #A09539;
-	--border-color: #040D0A;
-	--header-color: #E6CA5E;
-	--header-text-color: black;
-	--header-color-inverse: black;
-	--header-text-color-inverse: #E6CA5E;
-	--section-color: #F7EAC7;
+	var-background-color: #A09539;
+	var-border-color: #040D0A;
+	var-header-color: #E6CA5E;
+	var-header-text-color: black;
+	var-header-color-inverse: black;
+	var-header-text-color-inverse: #E6CA5E;
+	var-section-color: #F7EAC7;
 }
 /*---------*/
 
