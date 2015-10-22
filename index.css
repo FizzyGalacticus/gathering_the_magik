@@ -87,7 +87,7 @@ table > thead > .coolFont > th {
 }
 
 /*THEME*/
-.navbar-header, .navbar-collapse, .panel-heading, thead {
+.container-fluid, .panel-heading, thead {
 	background-color: #9F9D5E;
 }
 
