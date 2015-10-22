@@ -1,16 +1,3 @@
-/*VARIABLES*/
-/*:root {
-	border-color: black;
-	var-background-color: #A09539;
-	var-border-color: #040D0A;
-	var-header-color: #E6CA5E;
-	var-header-text-color: black;
-	var-header-color-inverse: black;
-	var-header-text-color-inverse: #E6CA5E;
-	var-section-color: #F7EAC7;
-}*/
-/*---------*/
-
 /*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
@@ -21,60 +8,79 @@
 		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
 		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-/*-----------*/
 
-/*THEME*/
+/*NAVIGATION*/
+.nav-tabs a{
+	color: #a51026;
+	font-family: 'Magik';
+}
+
+.table-striped > tbody > tr:hover > td {
+    background-color: #efefef;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus {
+	background-color: #a51026;
+	border-color: #a51026;
+	color: #222222;
+}
+
+.nav-tabs > .dropdown > ul > li.active > a,
+.nav-tabs > .dropdown > ul > li.active > a:focus {
+	background-color: #222222;
+	border-color: #222222;
+	color: #a51026;
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #a51026;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a:hover {
+	background-color: #a51026;
+	color: #222222;
+	border-color: #a51026;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	background-color: #a51026;
+}
+
+/*CONTRIBUTION TABLE*/
+table > thead > .coolFont > th {
+	font-family: 'Magik';
+}
+
+/*.tab-content {
+	background: url("https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MTG.jpg");
+	background-color: #222222;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}*/
+
+/*COLLAPSE PANELS*/
+.panel-title > a {
+	font-family: 'Magik';
+}
+
+/*.panel {
+	width: 75%;
+	margin: 15px auto;
+}*/
+
+/*BORDER*/
 #border {
     border: 10px solid transparent;
     -webkit-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Safari 3.1-5 */
     -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
     border-image-slice: 25%;
-    background-color: #A09539;
 }
-
-.nav-tabs > a, table > thead > .coolFont > th, .panel-title > a {
-	font-family: 'Magik';
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li > a:hover,
-.nav-tabs > li.active > a:hover,
-.dropdown-menu {
-	background-color: black;
-	border-color: black;
-	color: #E6CA5E;
-}
-
-.nav-tabs > .dropdown > ul > li.active > a,
-.nav-tabs > .dropdown > ul > li.active > a:focus {
-	background-color: #E6CA5E;
-	border-color: #E6CA5E;
-	color: black;
-}
-
-.nav-tabs {
-	border-bottom: 1px solid black;
-}
-
-.container-fluid, .panel-heading, thead {
-	background-color: #A09539;
-}
-
-.panel-body {
-	background-color: #F7EAC7;
-}
-
-.table-striped > tbody > tr:hover > td {
-    background-color: #efefef;
-}
-/*-----*/
-
-
-
-/*FUNCTIONALITY*/
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
-/*-------------*/
