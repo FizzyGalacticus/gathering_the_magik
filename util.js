@@ -32,10 +32,12 @@ $(document).on("keypress", function(e) {
 	}
 });
 
-$.ajax({
-    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
-    async:false,
-    success : function(result){
-		setBody(result);
-	} 
-});
+function init() {
+	$.ajax({
+	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
+	    async:false,
+	    success : function(result){
+			setBody(result);
+		} 
+	});
+}
