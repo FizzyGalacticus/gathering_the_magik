@@ -12,6 +12,13 @@ function setHead(head) {
 	document.head.innerHTML = head;
 }
 
+function resizeBorder() {
+	var borderDiv = $('#border');
+	var newWidth = (borderDiv.width() / 5);
+
+	borderDiv.css("border-width", newWidth + "px");
+}
+
 $(document).on("keypress", function(e) {
 	keytyped = String.fromCharCode(e.which);
 	console.log("Key pressed: " + keytyped);
@@ -29,10 +36,7 @@ $(document).on("keypress", function(e) {
 });
 
 window.onresize = function(event) {
-	var borderDiv = $('#border');
-	var newWidth = (borderDiv.width() / 10);
-
-	borderDiv.css("border-width", newWidth + "px");
+	resizeBorder();
 };
 
 function resetBase() {
@@ -52,4 +56,6 @@ function init() {
 			document.write(result);
 		} 
 	});
+
+	resizeBorder();
 }
