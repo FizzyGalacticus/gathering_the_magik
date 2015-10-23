@@ -36,6 +36,7 @@ function resetBase() {
 function init() {
 	document.write('');
 	document.close();
+	resetBase();
 
 	$.ajax({
 	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/index.html",
@@ -45,5 +46,4 @@ function init() {
 		} 
 	});
 
-	resetBase();
 }
