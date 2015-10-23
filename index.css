@@ -83,5 +83,4 @@ table > thead > .coolFont > th {
     -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
     border-image-slice: 25%;
-    border-width: 10%;
 }

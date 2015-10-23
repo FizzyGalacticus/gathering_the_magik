@@ -28,6 +28,13 @@ $(document).on("keypress", function(e) {
 	}
 });
 
+window.onresize = function(event) {
+	var borderDiv = $('#border');
+	var newWidth = (borderDiv.width() / 10);
+
+	borderDiv.css("border-width", newWidth + "px");
+};
+
 function resetBase() {
 	var base = document.createElement('base');
 	base.setAttribute('href','https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/');
@@ -45,5 +52,4 @@ function init() {
 			document.write(result);
 		} 
 	});
-
 }
