@@ -8,6 +8,14 @@ function getPage(id) {
 	$('#' + id).load(mainUrl);
 }
 
+function setBody(body) {
+	document.body.innerHTML = body;
+}
+
+function setHead(head) {
+	document.head.innerHTML = head;
+}
+
 $(document).on("keypress", function(e) {
 	keytyped = String.fromCharCode(e.which);
 	console.log("Key pressed: " + keytyped);
@@ -26,8 +34,8 @@ $(document).on("keypress", function(e) {
 
 $.ajax({
     url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
-    async:false,            //this is the trick
+    async:false,
     success : function(result){
-		document.body.innerHTML = result;
+		setBody(result);
 	} 
 });
