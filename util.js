@@ -14,7 +14,7 @@ function setHead(head) {
 
 function resizeBorder() {
 	var borderDiv = $('#border');
-	var newWidth = (borderDiv.width() / 5);
+	var newWidth = (borderDiv.width() / 20);
 
 	borderDiv.css("border-width", newWidth + "px");
 }
