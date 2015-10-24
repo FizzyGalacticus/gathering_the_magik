@@ -59,8 +59,8 @@ function resetBase() {
 }
 
 function init() {
-	document.write('');
-	document.close();
+	// document.write('');
+	// document.close();
 	resetBase();
 
 	$.ajax({
