@@ -2,7 +2,7 @@ var premium = false;
 var keystrokes = "";
 
 function getPage(id) {
-	var mainUrl = 'https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/pages/';
+	var mainUrl = 'https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/resources/pages/';
 	var mainUrl = mainUrl + id + '.html';
 
 	$('#' + id).load(mainUrl);
@@ -41,7 +41,7 @@ window.onresize = function(event) {
 
 function resetBase() {
 	var base = document.createElement('base');
-	base.setAttribute('href','https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/');
+	base.setAttribute('href','https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/');
 }
 
 function init() {
@@ -50,7 +50,7 @@ function init() {
 	resetBase();
 
 	$.ajax({
-	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
+	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/index.html",
 	    async:false,
 	    success : function(result){
 			document.write(result);
