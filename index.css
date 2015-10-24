@@ -86,11 +86,15 @@ table > thead > .coolFont > th {
 }
 
 /*FORCE TO TAKE UP WHOLE SCREEN*/
-.box {
+/*.box {
 	display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
 	flex-flow: column;
 	height: 100%;
+}*/
+html, body, .box {
+	height: 100vh;
+	overflow: scroll;
 }
