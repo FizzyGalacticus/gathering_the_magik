@@ -31,6 +31,8 @@ function resizeBorder() {
 
 	borderDiv.css('border-width', newWidth + 'px');
 	$('html').css('height', newHeight + 'vh');
+	$('body').css('height', newHeight + 'vh');
+	$('#border').css('height', newHeight + 'vh');
 }
 
 $(document).on("keypress", function(e) {
