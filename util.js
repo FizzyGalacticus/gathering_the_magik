@@ -27,11 +27,9 @@ function resizeBorder() {
 	var borderDiv = $('#border');
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
-	var newHeight = getActiveTabPane().height();
+	// var newHeight = $('#'+getActiveTabPane().id).height();
 
 	borderDiv.css('border-width', newWidth + 'px');
-	// $('html').css('height', newHeight + 'vh');
-	// $('body').css('height', newHeight + 'vh');
 	// $('#border').css('height', newHeight + 'vh');
 }
 
