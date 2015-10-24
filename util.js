@@ -67,7 +67,8 @@ function init() {
 	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/index.html",
 	    async:false,
 	    success : function(result){
-			document.write(result);
+	    	$('html').html(result);
+			// document.write(result);
 		} 
 	});
 
