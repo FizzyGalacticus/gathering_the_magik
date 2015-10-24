@@ -14,7 +14,7 @@ function setHead(head) {
 
 function resizeBorder() {
 	var borderDiv = $('#border');
-	var newWidth = (borderDiv.width() / 50 | 0);
+	var newWidth = ((borderDiv.width() / 50) | 0);
 
 	borderDiv.css("border-width", newWidth + "px");
 }
@@ -50,7 +50,7 @@ function init() {
 	resetBase();
 
 	$.ajax({
-	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/index.html",
+	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
 	    async:false,
 	    success : function(result){
 			document.write(result);
