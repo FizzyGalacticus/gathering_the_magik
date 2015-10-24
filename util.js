@@ -6,6 +6,7 @@ function getPage(id) {
 	var mainUrl = mainUrl + id + '.html';
 
 	$('#' + id).load(mainUrl);
+	resizeBorder();
 }
 
 function setHead(head) {
@@ -16,7 +17,10 @@ function resizeBorder() {
 	var borderDiv = $('#border');
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
-	borderDiv.css("border-width", newWidth + "px");
+	var newHeight = borderDiv.height();
+
+	borderDiv.css('border-width', newWidth + 'px');
+	$('html').css('height', newHeight + 'vh');
 }
 
 $(document).on("keypress", function(e) {
