@@ -96,5 +96,4 @@ table > thead > .coolFont > th {
 }*/
 html, body, .box {
 	height: 100vh;
-	overflow: scroll;
 }
