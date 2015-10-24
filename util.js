@@ -13,11 +13,21 @@ function setHead(head) {
 	document.head.innerHTML = head;
 }
 
+function getActiveTabPane() {
+	var panes = document.getElementsByClassName('tab-pane');
+
+	for (var i = panes.length - 1; i >= 0; i--) {
+		if (panes[i].className.indexOf('active') > -1) {
+			return panes[i];
+		};
+	};
+}
+
 function resizeBorder() {
 	var borderDiv = $('#border');
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
-	var newHeight = borderDiv.height();
+	var newHeight = getActiveTabPane().height();
 
 	borderDiv.css('border-width', newWidth + 'px');
 	$('html').css('height', newHeight + 'vh');
