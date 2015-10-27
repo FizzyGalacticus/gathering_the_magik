@@ -1,8 +1,9 @@
+var baseURL = "http://www.dustindodson.ninja/gathering_the_magik/";
 var premium = false;
 var keystrokes = "";
 
 function getPage(id) {
-	var mainUrl = 'http://www.dustindodson.ninja/gathering_the_magik/resources/pages/';
+	var mainUrl = 'resources/pages/';
 	var mainUrl = mainUrl + id + '.html';
 
 	$('#' + id).load(mainUrl);
@@ -41,7 +42,7 @@ window.onresize = function(event) {
 
 function resetBase() {
 	var base = document.createElement('base');
-	base.setAttribute('href','http://www.dustindodson.ninja/gathering_the_magik/');
+	base.setAttribute('href', baseURL);
 }
 
 function init() {
@@ -50,7 +51,7 @@ function init() {
 	resetBase();
 
 	$.ajax({
-	    url : "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/index.html",
+	    url : (baseURL + "index.html"),
 	    async:false,
 	    success : function(result){
 			document.write(result);
