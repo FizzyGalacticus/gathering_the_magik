@@ -89,4 +89,5 @@ table > thead > .coolFont > th {
 .carousel {
 	max-height: 640px !important;
 	max-width: 360px !important;
+	margin: auto;
 }
