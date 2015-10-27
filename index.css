@@ -87,5 +87,5 @@ table > thead > .coolFont > th {
 
 /*CAROUSEL*/
 .carousel-inner > .item > img {
-	height: 50% !important;
+	height: 640px !important;
 }
