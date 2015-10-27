@@ -1,12 +1,12 @@
 /*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot'); /* IE9 Compat Modes */
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.eot'); /* IE9 Compat Modes */
+	src: url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('http://www.dustindodson.ninja/gathering_the_magik/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /*NAVIGATION*/
@@ -58,7 +58,7 @@ table > thead > .coolFont > th {
 }
 
 /*.tab-content {
-	background: url("https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MTG.jpg");
+	background: url("http://www.dustindodson.ninja/gathering_the_magik/resources/images/MTG.jpg");
 	background-color: #222222;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -79,8 +79,8 @@ table > thead > .coolFont > th {
 /*BORDER*/
 #border {
     border: 10px solid transparent;
-    -webkit-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Safari 3.1-5 */
-    -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
-    border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
+    -webkit-border-image: url(http://www.dustindodson.ninja/gathering_the_magik/resources/images/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(http://www.dustindodson.ninja/gathering_the_magik/resources/images/border.png) round; /* Opera 11-12.1 */
+    border-image: url(http://www.dustindodson.ninja/gathering_the_magik/resources/images/border.png) round;
     border-image-slice: 25%;
 }

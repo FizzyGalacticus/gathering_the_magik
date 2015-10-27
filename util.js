@@ -2,7 +2,7 @@ var premium = false;
 var keystrokes = "";
 
 function getPage(id) {
-	var mainUrl = 'https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/pages/';
+	var mainUrl = 'http://www.dustindodson.ninja/gathering_the_magik/resources/pages/';
 	var mainUrl = mainUrl + id + '.html';
 
 	$('#' + id).load(mainUrl);
@@ -41,7 +41,7 @@ window.onresize = function(event) {
 
 function resetBase() {
 	var base = document.createElement('base');
-	base.setAttribute('href','https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/');
+	base.setAttribute('href','http://www.dustindodson.ninja/gathering_the_magik/');
 }
 
 function init() {
