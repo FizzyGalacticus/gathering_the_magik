@@ -1,4 +1,4 @@
-var baseURL = "http://www.dustindodson.ninja/gathering_the_magik/";
+var baseURL = "http://dustindodson.ninja/gathering_the_magik/";
 var premium = false;
 var keystrokes = "";
 
