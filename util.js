@@ -2,9 +2,20 @@ var baseURL = "http://dustindodson.ninja/gathering_the_magik/";
 var premium = false;
 var keystrokes = "";
 
-function getPage(id) {
+function getPage(id, checkForAuthorization) {
 	var mainUrl = 'resources/pages/';
-	var mainUrl = mainUrl + id + '.html';
+
+	if(checkForAuthorization) {
+		if(premium) {
+			mainUrl = mainUrl + id + '.html';
+		}
+		else {
+			mainUrl = mainUrl + 'unauthorized.html';
+		}
+	}
+	else {
+		mainUrl = mainUrl + id + '.html';
+	}
 
 	$('#' + id).load(mainUrl);
 }

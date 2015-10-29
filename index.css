@@ -21,14 +21,11 @@
 	border-radius: 0px;
 }
 
-.navbar-header > button > span {
-	background-color: #41261B;
-}
-
 .table-striped > tbody > tr:hover > td {
     background-color: #efefef;
 }
 
+.navbar-header > button > span,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
 	background-color: #41261B;
@@ -56,7 +53,6 @@
 
 .dropdown:hover .dropdown-menu {
 	display: block;
-	color: white;
 }
 
 .dropdown-menu,
