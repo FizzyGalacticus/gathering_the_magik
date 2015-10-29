@@ -81,10 +81,12 @@ table > thead > .coolFont > th {
 }
 
 /*COLLAPSE PANELS*/
+.panel,
 .panel-heading,
 .panel-heading > .panel-title > a {
 	font-family: 'Magik';
 	background-color: #41261B;
+	border-color: #41261B;
 	color: #93A7A8;
 }
 
