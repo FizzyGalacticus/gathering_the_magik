@@ -21,8 +21,8 @@
 	border-radius: 0px;
 }
 
-.navbar-header > .img-responsive {
-	margin: auto;
+.navbar-header > button > span {
+	background-color: #41261B;
 }
 
 .table-striped > tbody > tr:hover > td {
