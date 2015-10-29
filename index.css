@@ -105,6 +105,7 @@ table > thead > .coolFont > th {
     -o-border-image: url(resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(resources/images/border.png) round;
     border-image-slice: 25%;
+    background-color: #9A5D40;
 }
 
 /*FORCE TO TAKE UP WHOLE SCREEN*/
