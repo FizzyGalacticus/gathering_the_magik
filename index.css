@@ -9,10 +9,6 @@
 		 url('resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-body {
-	background-color: #9A5D40;
-}
-
 /*NAVIGATION*/
 .nav-tabs a{
 	color: #41261B;
@@ -80,14 +76,9 @@ table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
 
-/*.tab-content {
-	background: url("MTG.jpg");
+.tab-content {
 	background-color: #9A5D40;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100% auto;
-	background-attachment: fixed;
-}*/
+}
 
 /*COLLAPSE PANELS*/
 .panel-heading,
