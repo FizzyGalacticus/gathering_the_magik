@@ -11,8 +11,18 @@
 
 /*NAVIGATION*/
 .nav-tabs a{
-	color: #a51026;
+	color: #41261B;
 	font-family: 'Magik';
+}
+
+.navbar {
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	border-radius: 0px;
+}
+
+.navbar-header > .img-responsive {
+	margin: auto;
 }
 
 .table-striped > tbody > tr:hover > td {
@@ -21,35 +31,44 @@
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
-	background-color: #a51026;
-	border-color: #a51026;
-	color: #222222;
+	background-color: #41261B;
+	border-color: #41261B;
+	color: #9A5D40;
 }
 
 .nav-tabs > .dropdown > ul > li.active > a,
 .nav-tabs > .dropdown > ul > li.active > a:focus {
-	background-color: #222222;
-	border-color: #222222;
-	color: #a51026;
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	color: #41261B;
 }
 
 .nav-tabs {
-	border-bottom: 1px solid #a51026;
+	border-bottom: 1px solid #41261B;
 }
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:hover {
-	background-color: #a51026;
-	color: #222222;
-	border-color: #a51026;
+	background-color: #41261B;
+	color: #9A5D40;
+	border-color: #41261B;
 }
 
 .dropdown:hover .dropdown-menu {
 	display: block;
+	color: white;
 }
 
-.dropdown-menu {
-	background-color: #a51026;
+.dropdown-menu,
+.dropdown-menu > li > a {
+	background-color: #41261B;
+	color: #9A5D40;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a > .active {
+	background-color: #9A5D40;
+	color: #41261B;
 }
 
 /*CONTRIBUTION TABLE*/
@@ -59,7 +78,7 @@ table > thead > .coolFont > th {
 
 /*.tab-content {
 	background: url("MTG.jpg");
-	background-color: #222222;
+	background-color: #9A5D40;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -84,6 +103,16 @@ table > thead > .coolFont > th {
     border-image: url(resources/images/border.png) round;
     border-image-slice: 25%;
 }
+
+/*FORCE TO TAKE UP WHOLE SCREEN*/
+/*.box {
+	display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+	flex-flow: column;
+	height: 100%;
+}*/
 
 /*CAROUSEL*/
 .carousel {
