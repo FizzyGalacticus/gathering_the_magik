@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<base href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>Gathering the Magik</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/util.js"></script>
+		<script type="text/javascript" src="util.js"></script>
 	</head>
 	<body>
 		<div id="border" class="box">
@@ -22,7 +23,7 @@
 			                <span class="icon-bar"></span>
 			                <span class="icon-bar"></span>
 			            </button>
-			            <a href="#" class="pull-left"><img src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/resources/images/logo.png"></a>
+			            <a href="#" class="pull-left"><img src="resources/images/logo.png"></a>
 			        </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,6 +59,7 @@
 							    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<span class="caret"></span></a>
 							    <ul class="dropdown-menu" role="menu">
 							        <li><a data-toggle="tab" href="#analysis" onclick="getPage('analysis');">Analysis</a></li>
+							        <li><a data-toggle="tab" href="#interviews" onclick="getPage('interviews');">Interviews</a></li>
 							        <li><a data-toggle="tab" href="#contributions" onclick="getPage('contributions');">Contributions</a></li>
 							        <li><a data-toggle="tab" href="#sources" onclick="getPage('sources');">Sources</a></li>
 							    </ul>
@@ -101,6 +103,10 @@
 				<!-- START OF BRAINSTORMING ANALYSIS -->
 				<div id="analysis" class="tab-pane fade in active clearfix"></div>
 				<!-- END OF BRAINSTORMING ANALYSIS -->
+
+				<!-- START OF INTERVIEWS -->
+				<div id="interviews" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF INTERVIEWS -->
 				
 				<!-- START OF CONTRIBUTIONS -->
 				<div id="contributions" class="tab-pane fade clearfix"></div>
