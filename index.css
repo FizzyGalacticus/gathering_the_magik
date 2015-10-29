@@ -93,7 +93,9 @@ table > thead > .coolFont > th {
 .panel-collapse,
 .panel-collapse > .panel-body > p {
 	background-color: #C8C8D0;
+	border-color: #C8C8D0;
 	color: black;
+	font-family: initial !important;
 }
 
 /*BORDER*/
