@@ -9,6 +9,10 @@
 		 url('resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+body {
+	background-color: #9A5D40;
+}
+
 /*NAVIGATION*/
 .nav-tabs a{
 	color: #41261B;
@@ -86,14 +90,18 @@ table > thead > .coolFont > th {
 }*/
 
 /*COLLAPSE PANELS*/
-.panel-title > a {
+.panel-heading,
+.panel-heading > .panel-title > a {
 	font-family: 'Magik';
+	background-color: #41261B;
+	color: #93A7A8;
 }
 
-/*.panel {
-	width: 75%;
-	margin: 15px auto;
-}*/
+.panel-collapse,
+.panel-collapse > .panel-body > p {
+	background-color: #C8C8D0;
+	color: black;
+}
 
 /*BORDER*/
 #border {
