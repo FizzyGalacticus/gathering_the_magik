@@ -83,7 +83,9 @@ table > thead > .coolFont > th {
 /*COLLAPSE PANELS*/
 .panel,
 .panel-heading,
-.panel-heading > .panel-title > a {
+.panel-heading > .panel-title > a,
+.table > thead,
+.table > thead > tr > th {
 	font-family: 'Magik';
 	background-color: #41261B;
 	border-color: #41261B;
@@ -91,7 +93,9 @@ table > thead > .coolFont > th {
 }
 
 .panel-collapse,
-.panel-collapse > .panel-body > p {
+.panel-collapse > .panel-body > p,
+.table > tbody,
+.table > tbody > tr > td {
 	background-color: #C8C8D0;
 	border-color: #C8C8D0;
 	color: black;
