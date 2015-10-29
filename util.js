@@ -13,6 +13,9 @@ function getPage(id, checkForAuthorization) {
 			mainUrl = mainUrl + 'unauthorized.html';
 		}
 	}
+	else {
+		mainUrl = mainUrl + id + '.html';
+	}
 
 	$('#' + id).load(mainUrl);
 }
