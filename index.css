@@ -10,6 +10,31 @@
 }
 
 /*NAVIGATION*/
+.green-element {
+	border-color: green;
+	border-width: 3px;
+}
+
+.red-element {
+        border-color: red;
+        border-width: 3px;
+}
+
+.black-element {
+        border-color: black;
+        border-width: 3px;
+}
+
+.blue-element {
+        border-color: blue;
+        border-width: 3px;
+}
+
+.white-element {
+        border-color: white;
+        border-width: 3px;
+}
+
 .img-responsive,
 .nav-pills {
 	margin: 0 auto;
