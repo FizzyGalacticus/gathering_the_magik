@@ -1,55 +1,70 @@
 /*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot'); /* IE9 Compat Modes */
-	src: url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('resources/fonts/MAGIC.eot'); /* IE9 Compat Modes */
+	src: url('resources/fonts/MAGIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('resources/fonts/MAGIC.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('resources/fonts/MAGIC.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('resources/fonts/MAGIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('resources/fonts/MAGIC.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /*NAVIGATION*/
 .nav-tabs a{
-	color: #a51026;
+	color: #41261B;
 	font-family: 'Magik';
+}
+
+.navbar {
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	border-radius: 0px;
 }
 
 .table-striped > tbody > tr:hover > td {
     background-color: #efefef;
 }
 
+.navbar-header > button > span,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
-	background-color: #a51026;
-	border-color: #a51026;
-	color: #222222;
+	background-color: #41261B;
+	border-color: #41261B;
+	color: #9A5D40;
 }
 
 .nav-tabs > .dropdown > ul > li.active > a,
 .nav-tabs > .dropdown > ul > li.active > a:focus {
-	background-color: #222222;
-	border-color: #222222;
-	color: #a51026;
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	color: #41261B;
 }
 
 .nav-tabs {
-	border-bottom: 1px solid #a51026;
+	border-bottom: 1px solid #41261B;
 }
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:hover {
-	background-color: #a51026;
-	color: #222222;
-	border-color: #a51026;
+	background-color: #41261B;
+	color: #9A5D40;
+	border-color: #41261B;
 }
 
 .dropdown:hover .dropdown-menu {
 	display: block;
 }
 
-.dropdown-menu {
-	background-color: #a51026;
+.dropdown-menu,
+.dropdown-menu > li > a {
+	background-color: #41261B;
+	color: #9A5D40;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a > .active {
+	background-color: #9A5D40;
+	color: #41261B;
 }
 
 /*CONTRIBUTION TABLE*/
@@ -57,30 +72,55 @@ table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
 
-/*.tab-content {
-	background: url("https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/MTG.jpg");
-	background-color: #222222;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100% auto;
-	background-attachment: fixed;
-}*/
-
-/*COLLAPSE PANELS*/
-.panel-title > a {
-	font-family: 'Magik';
+.tab-content {
+	background-color: #9A5D40;
 }
 
-/*.panel {
-	width: 75%;
-	margin: 15px auto;
-}*/
+/*COLLAPSE PANELS*/
+.panel,
+.panel-heading,
+.panel-heading > .panel-title > a,
+.table > thead,
+.table > thead > tr > th {
+	font-family: 'Magik';
+	background-color: #41261B;
+	border-color: #41261B;
+	color: #93A7A8;
+}
+
+.panel-collapse,
+.panel-collapse > .panel-body > p,
+.table > tbody,
+.table > tbody > tr > td {
+	background-color: #C8C8D0;
+	border-color: #C8C8D0;
+	color: black;
+	font-family: initial !important;
+}
 
 /*BORDER*/
 #border {
     border: 10px solid transparent;
-    -webkit-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Safari 3.1-5 */
-    -o-border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round; /* Opera 11-12.1 */
-    border-image: url(https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/border.png) round;
+    -webkit-border-image: url(resources/images/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(resources/images/border.png) round; /* Opera 11-12.1 */
+    border-image: url(resources/images/border.png) round;
     border-image-slice: 25%;
+    background-color: #9A5D40;
+}
+
+/*FORCE TO TAKE UP WHOLE SCREEN*/
+/*.box {
+	display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+	flex-flow: column;
+	height: 100%;
+}*/
+
+/*CAROUSEL*/
+.carousel {
+	max-height: 640px !important;
+	max-width: 360px !important;
+	margin: auto;
 }

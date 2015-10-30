@@ -1,112 +1,122 @@
 <!DOCTYPE html>
-<div id="border">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Gathering the Magik</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/theme/raw/index.css" media="screen" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/util.js" type="text/javascript"></script>
+<html>
+	<head>
+		<base href="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/theme/raw/" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Gathering the Magik</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="util.js"></script>
+	</head>
+	<body>
+		<div id="border">
+			<!-- START OF NAVIGATION -->
+			<nav class="navbar">
+			    <div class="container-fluid">
+			        <!-- Brand and toggle get grouped for better mobile display -->
+			        <div class="navbar-header">
+			            <a href="#"><img class="img-responsive" src="resources/images/testlogo.png"></a>
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			        </div>
 
-	<!-- START OF NAVIGATION -->
-	<nav class="navbar navbar-inverse">
-	    <div class="container-fluid">
-	        <!-- Brand and toggle get grouped for better mobile display -->
-	        <div class="navbar-header">
-	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                <span class="sr-only">Toggle navigation</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	            </button>
-	            <a href="#" class="pull-left"><img src="https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/resources/images/logo.png"></a>
-	        </div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				        <ul class="nav nav-tabs">
+				            <li class="active"><a data-toggle="tab" href="#home" onclick="getPage('home', false);">Home</a></li>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		        <ul class="nav nav-tabs">
-		            <li class="active"><a data-toggle="tab" href="#home" onclick="getPage('home');">Home</a></li>
+							<li class="dropdown">
+							    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+							    <ul class="dropdown-menu" role="menu">
+							        <li><a data-toggle="tab" href="#free" onclick="getPage('free', false);">Free</a></li>
+							        <li><a data-toggle="tab" href="#premium" onclick="getPage('premium', true);">Premium</a></li>
+							    </ul>
+							</li>
 
-					<li class="dropdown">
-					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
-					    <ul class="dropdown-menu" role="menu">
-					        <li><a data-toggle="tab" href="#free" onclick="getPage('free');">Free</a></li>
-					        <li><a data-toggle="tab" href="#premium" onclick="getPage('premium');">Premium</a></li>
-					    </ul>
-					</li>
+							<li class="dropdown">
+							    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+							    <ul class="dropdown-menu" role="menu">
+							        <li><a data-toggle="tab" href="#contact" onclick="getPage('contact', false);">Contact Us</a></li>
+							        <li><a data-toggle="tab" href="#faq" onclick="getPage('faq', false);">FAQ</a></li>
+							    </ul>
+							</li>
 
-					<li class="dropdown">
-					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
-					    <ul class="dropdown-menu" role="menu">
-					        <li><a data-toggle="tab" href="#contact" onclick="getPage('contact');">Contact Us</a></li>
-					        <li><a data-toggle="tab" href="#faq" onclick="getPage('faq');">FAQ</a></li>
-					    </ul>
-					</li>
+							<li class="dropdown">
+							    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News<span class="caret"></span></a>
+							    <ul class="dropdown-menu" role="menu">
+							        <li><a data-toggle="tab" href="#media" onclick="getPage('media', false);">In The Media</a></li>
+							        <li><a data-toggle="tab" href="#updates" onclick="getPage('updates', false);">Updates</a></li>
+							    </ul>
+							</li>
 
-					<li class="dropdown">
-					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News<span class="caret"></span></a>
-					    <ul class="dropdown-menu" role="menu">
-					        <li><a data-toggle="tab" href="#media" onclick="getPage('media');">In The Media</a></li>
-					        <li><a data-toggle="tab" href="#updates" onclick="getPage('updates');">Updates</a></li>
-					    </ul>
-					</li>
+							<li class="dropdown">
+							    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<span class="caret"></span></a>
+							    <ul class="dropdown-menu" role="menu">
+							        <li><a data-toggle="tab" href="#analysis" onclick="getPage('analysis', false);">Analysis</a></li>
+							        <li><a data-toggle="tab" href="#interviews" onclick="getPage('interviews', false);">Interviews</a></li>
+							        <li><a data-toggle="tab" href="#contributions" onclick="getPage('contributions', false);">Contributions</a></li>
+							        <li><a data-toggle="tab" href="#sources" onclick="getPage('sources', false);">Sources</a></li>
+							    </ul>
+							</li>
+				        </ul>
+				    </div><!-- /.navbar-collapse -->
+			    </div><!-- /.container-fluid -->
+			</nav>
+			<!-- END OF NAVIGATION -->
 
-					<li class="dropdown">
-					    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<span class="caret"></span></a>
-					    <ul class="dropdown-menu" role="menu">
-					        <li><a data-toggle="tab" href="#analysis" onclick="getPage('analysis');">Analysis</a></li>
-					        <li><a data-toggle="tab" href="#contributions" onclick="getPage('contributions');">Contributions</a></li>
-					        <li><a data-toggle="tab" href="#sources" onclick="getPage('sources');">Sources</a></li>
-					    </ul>
-					</li>
-		        </ul>
-		    </div><!-- /.navbar-collapse -->
-	    </div><!-- /.container-fluid -->
-	</nav>
-	<!-- END OF NAVIGATION -->
-	
-	<!-- START OF TAB CONTENT -->
-	<div class="tab-content">
-		<!-- START OF HOME -->
-		<div id="home" class="tab-pane fade in active clearfix"><script type="text/javascript">getPage('home');</script></div>
-		<!-- END OF HOME -->
+			<!-- START OF TAB CONTENT -->
+			<div class="tab-content">
+				<!-- START OF HOME -->
+				<div id="home" class="tab-pane fade in active clearfix"><script type="text/javascript">getPage('home', false);</script></div>
+				<!-- END OF HOME -->
 
-		<!-- START OF FREE -->
-		<div id="free" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF FREE -->
+				<!-- START OF FREE -->
+				<div id="free" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF FREE -->
 
-		<!-- START OF PREMIUM -->
-		<div id="premium" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF PREMIUM -->
+				<!-- START OF PREMIUM -->
+				<div id="premium" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF PREMIUM -->
 
-		<!-- START OF CONTACT -->
-		<div id="contact" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF CONTACT -->
+				<!-- START OF CONTACT -->
+				<div id="contact" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF CONTACT -->
 
-		<!-- START OF FAQ -->
-		<div id="faq" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF FAQ -->
+				<!-- START OF FAQ -->
+				<div id="faq" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF FAQ -->
 
-		<!-- START OF MEDIA -->
-		<div id="media" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF MEDIA -->
+				<!-- START OF MEDIA -->
+				<div id="media" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF MEDIA -->
 
-		<!-- START OF UPDATES -->
-		<div id="updates" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF UPDATES -->
+				<!-- START OF UPDATES -->
+				<div id="updates" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF UPDATES -->
 
-		<!-- START OF BRAINSTORMING ANALYSIS -->
-		<div id="analysis" class="tab-pane fade in active clearfix"></div>
-		<!-- END OF BRAINSTORMING ANALYSIS -->
-		
-		<!-- START OF CONTRIBUTIONS -->
-		<div id="contributions" class="tab-pane fade clearfix"></div>
-		<!-- END OF CONTRIBUTIONS -->
-		
-		<!-- START OF SOURCES -->
-		<div id="sources" class="tab-pane fade clearfix"></div>
-		<!-- END OF SOURCES -->
-	</div>
-	<!-- END OF TAB CONTENT -->
-</div>
+				<!-- START OF BRAINSTORMING ANALYSIS -->
+				<div id="analysis" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF BRAINSTORMING ANALYSIS -->
+
+				<!-- START OF INTERVIEWS -->
+				<div id="interviews" class="tab-pane fade in active clearfix"></div>
+				<!-- END OF INTERVIEWS -->
+				
+				<!-- START OF CONTRIBUTIONS -->
+				<div id="contributions" class="tab-pane fade clearfix"></div>
+				<!-- END OF CONTRIBUTIONS -->
+				
+				<!-- START OF SOURCES -->
+				<div id="sources" class="tab-pane fade clearfix"></div>
+				<!-- END OF SOURCES -->
+			</div>
+			<!-- END OF TAB CONTENT -->
+		</div>
+	</body>
+</html>
