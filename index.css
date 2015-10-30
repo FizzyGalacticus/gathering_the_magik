@@ -12,35 +12,35 @@
 /*NAVIGATION*/
 .green-element {
 	border-style: solid;
-	border-color: green !important;
+	border-color: #759B61 !important;
 	border-width: 3px !important;
 	border-radius: 25px;
 }
 
 .red-element {
 	border-style: solid;
-    border-color: red !important;
+    border-color: #C03418 !important;
     border-width: 3px !important;
     border-radius: 25px;
 }
 
 .black-element {
 	border-style: solid;
-    border-color: black !important;
+    border-color: #54433F !important;
     border-width: 3px !important;
     border-radius: 25px;
 }
 
 .blue-element {
 	border-style: solid;
-    border-color: blue !important;
+    border-color: #3A92BA !important;
     border-width: 3px !important;
     border-radius: 25px;
 }
 
 .white-element {
 	border-style: solid;
-    border-color: white !important;
+    border-color: #DAC49E !important;
     border-width: 3px !important;
     border-radius: 25px;
 }
