@@ -11,28 +11,28 @@
 
 /*NAVIGATION*/
 .green-element {
-	border-color: green;
-	border-width: 3px;
+	border-color: green !important;
+	border-width: 3px !important;
 }
 
 .red-element {
-        border-color: red;
-        border-width: 3px;
+        border-color: red !important;
+        border-width: 3px !important;
 }
 
 .black-element {
-        border-color: black;
-        border-width: 3px;
+        border-color: black !important;
+        border-width: 3px !important;
 }
 
 .blue-element {
-        border-color: blue;
-        border-width: 3px;
+        border-color: blue !important;
+        border-width: 3px !important;
 }
 
 .white-element {
-        border-color: white;
-        border-width: 3px;
+        border-color: white !important;
+        border-width: 3px !important;
 }
 
 .img-responsive,
