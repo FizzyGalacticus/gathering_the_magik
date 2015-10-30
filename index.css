@@ -127,6 +127,7 @@ table > thead > .coolFont > th {
 
 .intro > h1 {
 	font-family: 'Magik';
+	color: #84A6C1; /*LOGO BLUE*/
 }
 
 .intro > p::first-letter {
