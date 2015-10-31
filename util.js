@@ -81,8 +81,8 @@ function calculateContributions() {
 		elements = document.getElementsByClassName(classNames[j]);
 		for(var i = 0; i < elements.length; i++) {
 			var value = elements[i].innerHTML;
-			value = parseInt(value.replace('%\?', ''));
-			if (!isNaN(value) && value.length > 0) total = total + value;
+			value = value.replace('%\?', '');
+			if (value.length) total = total + parseInt(value);
 		}
 
 		totalElement = document.getElementById(classNames[j] + '-total');
