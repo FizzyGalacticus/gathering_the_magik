@@ -71,3 +71,24 @@ function init() {
 
 	resizeBorder();
 }
+
+function calculateContributions() {
+	var classNames = ['dustin','dylan','josh','scott'];
+	var elements;
+	var total = 0;
+
+	for(var j = 0; j < classNames.length; i++) {
+		elements = document.getElementsByClassName(classNames[j]);
+		for(var i = 0; i < elements.length; i++) {
+			var value = elements[i].innerHTML;
+			if (value === '?') continue;
+
+			value = parseInt(value.replace('%'));
+			total = total + value;
+		}
+
+		totalElement = document.getElementById(classNames[j] + '-total');
+		totalElement.innerHTML = (total + '%');
+		total = 0;
+	}
+}
