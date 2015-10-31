@@ -82,7 +82,7 @@ function calculateContributions() {
 		for(var i = 0; i < elements.length; i++) {
 			var value = elements[i].innerHTML;
 			value = parseInt(value.replace('%\?', ''));
-			if (value.length) total = total + value;
+			if (!isNaN(value) && value.length > 0) total = total + value;
 		}
 
 		totalElement = document.getElementById(classNames[j] + '-total');
