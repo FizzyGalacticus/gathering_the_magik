@@ -73,23 +73,22 @@ function init() {
 }
 
 function calculateContributions() {
-	/*var classNames = ['dustin','dylan','josh','scott'];
+	var classNames = ['dustin','dylan','josh','scott'];
 	var elements;
 	var total = 0;
 
-	for(var j = 0; j < classNames.length; i++) {
+	for(var j = 0; j < classNames.length; j++) {
 		elements = document.getElementsByClassName(classNames[j]);
 		for(var i = 0; i < elements.length; i++) {
 			var value = elements[i].innerHTML;
 			if (value === '?') continue;
 
-			value = parseInt(value.replace('%'));
+			value = parseInt(value.replace('%', ''));
 			total = total + value;
 		}
 
 		totalElement = document.getElementById(classNames[j] + '-total');
 		totalElement.innerHTML = (total + '%');
 		total = 0;
-	}*/
-	alert("Boo! This isn't working at all!");
+	}
 }
