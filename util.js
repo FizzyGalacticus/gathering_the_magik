@@ -88,7 +88,7 @@ function calculateContributions() {
 		}
 
 		totalElement = document.getElementById(classNames[j] + '-total');
-		totalElement.innerHTML = (total + '%');
+		totalElement.innerHTML = (total/elements.length + '%');
 		total = 0;
 	}
 }
