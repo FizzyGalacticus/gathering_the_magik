@@ -154,3 +154,7 @@ table > thead > .coolFont > th {
 	border-radius: 3px;
 	margin: 40px !important;
 }
+
+.contact > .contact-body > p > span {
+	font-size: 1.2em;
+}
