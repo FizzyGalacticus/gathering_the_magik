@@ -151,10 +151,14 @@ table > thead > .coolFont > th {
 .contact > .contact-body {
 	background-color: #C8C8D0;
 	border-color: #C8C8D0;
-	border-radius: 3px;
+	border-radius: 5px;
 	margin: 40px !important;
 }
 
 .contact > .contact-body > p > span {
 	font-size: 2em;
+}
+
+.contact > .contact-body > p {
+	padding: 5px;
 }
