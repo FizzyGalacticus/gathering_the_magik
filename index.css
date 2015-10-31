@@ -151,6 +151,6 @@ table > thead > .coolFont > th {
 .contact > .contact-body {
 	background-color: #C8C8D0;
 	border-color: #C8C8D0;
-	border-radius: 25px;
-	margin: auto !important;
+	border-radius: 3px;
+	margin: 40px !important;
 }
