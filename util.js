@@ -73,7 +73,7 @@ function init() {
 }
 
 function calculateContributions() {
-	var classNames = ['dustin','dylan','josh','scott'];
+	/*var classNames = ['dustin','dylan','josh','scott'];
 	var elements;
 	var total = 0;
 
@@ -90,5 +90,6 @@ function calculateContributions() {
 		totalElement = document.getElementById(classNames[j] + '-total');
 		totalElement.innerHTML = (total + '%');
 		total = 0;
-	}
+	}*/
+	alert("Boo! This isn't working at all!");
 }
