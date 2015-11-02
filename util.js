@@ -57,7 +57,7 @@ function resetBase() {
 }
 
 function init() {
-	document.write('');
+	/*document.write('');
 	document.close();
 	resetBase();
 
@@ -67,7 +67,9 @@ function init() {
 	    success : function(result){
 			document.write(result);
 		} 
-	});
+	});*/
+	
+	getPage('navigation');
 
 	resizeBorder();
 }
@@ -90,3 +92,5 @@ function calculateContributions() {
 		total = 0;
 	}
 }
+
+init();
