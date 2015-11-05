@@ -1,0 +1,55 @@
+<nav class="navbar">
+	<div class="container-fluid">
+    	<a href="#"><img class="img-responsive" src="resources/images/logo.png"></a>
+		<!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav nav-pills text-center">
+	            <li class="active"><a data-toggle="tab" href="#home" onclick="getPage('home', false);">Home</a></li>
+
+				<li class="dropdown">
+				    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+				        <li><a data-toggle="tab" href="#free" onclick="getPage('free', false);">Free</a></li>
+				        <li><a data-toggle="tab" href="#premium" onclick="getPage('premium', true);">Premium</a></li>
+				    </ul>
+				</li>
+
+				<li class="dropdown">
+				    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+				        <li><a data-toggle="tab" href="#contact" onclick="getPage('contact', false);">Contact Us</a></li>
+				        <li><a data-toggle="tab" href="#faq" onclick="getPage('faq', false);">FAQ</a></li>
+				    </ul>
+				</li>
+
+				<li class="dropdown">
+				    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News<span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+				        <li><a data-toggle="tab" href="#media" onclick="getPage('media', false);">In The Media</a></li>
+				        <li><a data-toggle="tab" href="#updates" onclick="getPage('updates', false);">Updates</a></li>
+				    </ul>
+				</li>
+
+				<li class="dropdown">
+				    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+				        <li><a data-toggle="tab" href="#analysis" onclick="getPage('analysis', false);">Analysis</a></li>
+				        <li><a data-toggle="tab" href="#interviews" onclick="getPage('interviews', false);">Interviews</a></li>
+				        <li><a data-toggle="tab" href="#contributions" onclick="getPage('contributions', false);">Contributions</a></li>
+				        <li><a data-toggle="tab" href="#sources" onclick="getPage('sources', false);">Sources</a></li>
+				    </ul>
+				</li>
+	        </ul>
+	    </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>

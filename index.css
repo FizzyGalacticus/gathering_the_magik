@@ -10,46 +10,71 @@
 }
 
 /*NAVIGATION*/
-.nav-tabs a{
-	color: #a51026;
+.img-responsive,
+.nav-pills {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-pills a{
+	color: #41261B;
 	font-family: 'Magik';
+	border-radius: 25px !important;
+}
+
+.navbar {
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	border-radius: 0px;
 }
 
 .table-striped > tbody > tr:hover > td {
     background-color: #efefef;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus {
-	background-color: #a51026;
-	border-color: #a51026;
-	color: #222222;
+.navbar-header > button > span,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus {
+	background-color: #41261B;
+	border-color: #41261B;
+	color: #9A5D40;
 }
 
-.nav-tabs > .dropdown > ul > li.active > a,
-.nav-tabs > .dropdown > ul > li.active > a:focus {
-	background-color: #222222;
-	border-color: #222222;
-	color: #a51026;
+.nav-pills > .dropdown > ul > li.active > a,
+.nav-pills > .dropdown > ul > li.active > a:focus {
+	background-color: #9A5D40;
+	border-color: #9A5D40;
+	color: #41261B;
 }
 
-.nav-tabs {
-	border-bottom: 1px solid #a51026;
+.nav-pills {
+	/*border-bottom: 1px solid #41261B;*/
 }
 
-.nav-tabs > li > a:hover,
-.nav-tabs > li.active > a:hover {
-	background-color: #a51026;
-	color: #222222;
-	border-color: #a51026;
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
+	background-color: #41261B;
+	color: #9A5D40;
+	border-color: #41261B;
 }
 
 .dropdown:hover .dropdown-menu {
 	display: block;
+	margin-top: 0px;
+	border-radius: 25px !important;
 }
 
-.dropdown-menu {
-	background-color: #a51026;
+.dropdown-menu,
+.dropdown-menu > li > a {
+	background-color: #41261B;
+	color: #9A5D40;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a > .active {
+	background-color: #9A5D40;
+	color: #41261B;
 }
 
 /*CONTRIBUTION TABLE*/
@@ -57,24 +82,31 @@ table > thead > .coolFont > th {
 	font-family: 'Magik';
 }
 
-/*.tab-content {
-	background: url("MTG.jpg");
-	background-color: #222222;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100% auto;
-	background-attachment: fixed;
-}*/
-
-/*COLLAPSE PANELS*/
-.panel-title > a {
-	font-family: 'Magik';
+.tab-content {
+	background-color: #9A5D40;
 }
 
-/*.panel {
-	width: 75%;
-	margin: 15px auto;
-}*/
+/*COLLAPSE PANELS*/
+.panel,
+.panel-heading,
+.panel-heading > .panel-title > a,
+.table > thead,
+.table > thead > tr > th {
+	font-family: 'Magik';
+	background-color: #41261B;
+	border-color: #41261B;
+	color: #93A7A8;
+}
+
+.panel-collapse,
+.panel-collapse > .panel-body > p,
+.table > tbody,
+.table > tbody > tr > td {
+	background-color: #C8C8D0;
+	border-color: #C8C8D0;
+	color: black;
+	font-family: initial !important;
+}
 
 /*BORDER*/
 #border {
@@ -83,6 +115,7 @@ table > thead > .coolFont > th {
     -o-border-image: url(resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(resources/images/border.png) round;
     border-image-slice: 25%;
+    background-color: #9A5D40;
 }
 
 /*FORCE TO TAKE UP WHOLE SCREEN*/
@@ -97,7 +130,35 @@ table > thead > .coolFont > th {
 
 /*CAROUSEL*/
 .carousel {
-	max-height: 640px !important;
+	height: auto !important;
 	max-width: 360px !important;
 	margin: auto;
+}
+
+.intro > h1,
+.contact > h1 {
+	font-family: 'Magik';
+	font-size: 250%;
+	color: #84A6C1 !important; /*LOGO BLUE*/
+}
+
+.intro > p::first-letter {
+	font-family: 'Magik';
+	font-size: 150%;
+	color: #84A6C1 !important; /*LOGO BLUE*/
+}
+
+.contact > .contact-body {
+	background-color: #C8C8D0;
+	border-color: #C8C8D0;
+	border-radius: 5px;
+	margin: 40px !important;
+}
+
+.contact > .contact-body > p > span {
+	font-size: 2em;
+}
+
+.contact > .contact-body > p {
+	padding: 5px;
 }

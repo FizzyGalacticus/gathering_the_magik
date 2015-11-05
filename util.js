@@ -1,10 +1,21 @@
-var baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/";
+var baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/theme/raw/";
 var premium = false;
 var keystrokes = "";
 
-function getPage(id) {
+function getPage(id, checkForAuthorization) {
 	var mainUrl = 'resources/pages/';
-	var mainUrl = mainUrl + id + '.html';
+
+	if(checkForAuthorization) {
+		if(premium) {
+			mainUrl = mainUrl + id + '.html';
+		}
+		else {
+			mainUrl = mainUrl + 'unauthorized.html';
+		}
+	}
+	else {
+		mainUrl = mainUrl + id + '.html';
+	}
 
 	$('#' + id).load(mainUrl);
 	resizeBorder();
@@ -60,8 +71,8 @@ function resetBase() {
 }
 
 function init() {
-	// document.write('');
-	// document.close();
+	/*document.write('');
+	document.close();
 	resetBase();
 
 	$.ajax({
@@ -71,7 +82,31 @@ function init() {
 	    	$('html').html(result);
 			// document.write(result);
 		} 
-	});
+	});*/
+	
+	resetBase();	
+	getPage('navigation');
 
 	resizeBorder();
 }
+
+function calculateContributions() {
+	var classNames = ['dustin','dylan','josh','scott'];
+	var elements;
+	var total = 0;
+
+	for(var j = 0; j < classNames.length; j++) {
+		elements = document.getElementsByClassName(classNames[j]);
+		for(var i = 0; i < elements.length; i++) {
+			var value = elements[i].innerHTML;
+			value = value.replace(/[%?]/gi, '');
+			if (value.length) total = total + parseInt(value);
+		}
+
+		totalElement = document.getElementById(classNames[j] + '-total');
+		totalElement.innerHTML = (total/elements.length + '%');
+		total = 0;
+	}
+}
+
+init();
