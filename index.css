@@ -162,3 +162,7 @@ table > thead > .coolFont > th {
 .contact > .contact-body > p {
 	padding: 5px;
 }
+
+.panel > #prototype > .panel-body {
+	min-height: 900px !important;
+}
