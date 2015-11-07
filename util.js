@@ -1,4 +1,4 @@
-var baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/";
+var baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/";
 var premium = false;
 var keystrokes = "";
 
