@@ -3,7 +3,7 @@ var premium = false;
 var keystrokes = "";
 
 if (document.location.href.indexOf('redmine') > -1) {
-	baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/";
+	baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/";
 }
 else if(document.location.href.indexOf('www') > -1){
 	baseURL = "http://www.dustindodson.ninja/gathering_the_magik/";
