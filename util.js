@@ -111,5 +111,6 @@ function calculateContributions() {
 
 resetBase();	
 getPage('navigation');
+getPage('home');
 
-resizeBorder();
+window.onresize();
