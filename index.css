@@ -35,7 +35,8 @@
 
 .navbar-header > button > span,
 .nav-pills > li.active > a,
-.nav-pills > li.active > a:focus {
+.nav-pills > li.active > a:focus,
+.nav-pills > li.dropdown > a:focus {
 	background-color: #41261B; /*DARK BROWN*/
 	border-color: #41261B; /*DARK BROWN*/
 	color: #9A5D40; /*LIGHT BROWN*/
