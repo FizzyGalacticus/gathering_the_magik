@@ -168,5 +168,5 @@ table > thead > .coolFont > th {
 }
 
 hr {
-	background-color: #41261B; /*DARK BROWN*/
+	border-top-color: #41261B; /*DARK BROWN*/
 }
