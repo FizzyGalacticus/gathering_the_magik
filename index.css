@@ -18,14 +18,14 @@
 }
 
 .nav-pills a{
-	color: #41261B;
+	color: #41261B; /*DARK BROWN*/
 	font-family: 'Magik';
 	border-radius: 25px !important;
 }
 
 .navbar {
-	background-color: #9A5D40;
-	border-color: #9A5D40;
+	background-color: #9A5D40; /*LIGHT BROWN*/
+	border-color: #9A5D40; /*LIGHT BROWN*/
 	border-radius: 0px;
 }
 
@@ -36,27 +36,27 @@
 .navbar-header > button > span,
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus {
-	background-color: #41261B;
-	border-color: #41261B;
-	color: #9A5D40;
+	background-color: #41261B; /*DARK BROWN*/
+	border-color: #41261B; /*DARK BROWN*/
+	color: #9A5D40; /*LIGHT BROWN*/
 }
 
 .nav-pills > .dropdown > ul > li.active > a,
 .nav-pills > .dropdown > ul > li.active > a:focus {
-	background-color: #9A5D40;
-	border-color: #9A5D40;
-	color: #41261B;
+	background-color: #9A5D40; /*LIGHT BROWN*/
+	border-color: #9A5D40; /*LIGHT BROWN*/
+	color: #41261B; /*DARK BROWN*/
 }
 
 .nav-pills {
-	/*border-bottom: 1px solid #41261B;*/
+	border-bottom: 1px solid #41261B; /*DARK BROWN*/
 }
 
 .nav-pills > li > a:hover,
 .nav-pills > li.active > a:hover {
-	background-color: #41261B;
-	color: #9A5D40;
-	border-color: #41261B;
+	background-color: #41261B; /*DARK BROWN*/
+	color: #9A5D40; /*LIGHT BROWN*/
+	border-color: #41261B; /*DARK BROWN*/
 }
 
 .dropdown:hover .dropdown-menu {
@@ -67,14 +67,14 @@
 
 .dropdown-menu,
 .dropdown-menu > li > a {
-	background-color: #41261B;
-	color: #9A5D40;
+	background-color: #41261B; /*DARK BROWN*/
+	color: #9A5D40; /*LIGHT BROWN*/
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a > .active {
-	background-color: #9A5D40;
-	color: #41261B;
+	background-color: #9A5D40; /*LIGHT BROWN*/
+	color: #41261B; /*DARK BROWN*/
 }
 
 /*CONTRIBUTION TABLE*/
@@ -83,7 +83,7 @@ table > thead > .coolFont > th {
 }
 
 .tab-content {
-	background-color: #9A5D40;
+	background-color: #9A5D40; /*LIGHT BROWN*/
 }
 
 /*COLLAPSE PANELS*/
@@ -93,8 +93,8 @@ table > thead > .coolFont > th {
 .table > thead,
 .table > thead > tr > th {
 	font-family: 'Magik';
-	background-color: #41261B;
-	border-color: #41261B;
+	background-color: #41261B; /*DARK BROWN*/
+	border-color: #41261B; /*DARK BROWN*/
 	color: #93A7A8;
 }
 
@@ -102,8 +102,8 @@ table > thead > .coolFont > th {
 .panel-collapse > .panel-body > p,
 .table > tbody,
 .table > tbody > tr > td {
-	background-color: #C8C8D0;
-	border-color: #C8C8D0;
+	background-color: #C8C8D0; /*BLUEISH GREY*/
+	border-color: #C8C8D0; /*BLUEISH GREY*/
 	color: black;
 	font-family: initial !important;
 }
@@ -115,7 +115,7 @@ table > thead > .coolFont > th {
     -o-border-image: url(resources/images/border.png) round; /* Opera 11-12.1 */
     border-image: url(resources/images/border.png) round;
     border-image-slice: 25%;
-    background-color: #9A5D40;
+    background-color: #9A5D40; /*LIGHT BROWN*/
 }
 
 /*FORCE TO TAKE UP WHOLE SCREEN*/
@@ -149,8 +149,8 @@ table > thead > .coolFont > th {
 }
 
 .contact > .contact-body {
-	background-color: #C8C8D0;
-	border-color: #C8C8D0;
+	background-color: #C8C8D0; /*BLUEISH GREY*/
+	border-color: #C8C8D0; /*BLUEISH GREY*/
 	border-radius: 5px;
 	margin: 40px !important;
 }
@@ -165,4 +165,8 @@ table > thead > .coolFont > th {
 
 .panel > #prototype > .panel-body {
 	min-height: 900px !important;
+}
+
+hr {
+	background-color: #41261B; /*DARK BROWN*/
 }
