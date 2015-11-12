@@ -178,12 +178,13 @@ hr {
 }
 
 .eula > p,
+.eula > ol > li > p,
 .intro > p {
 	color: black;
 }
 
 .eula > h1,
-.eula > h2 {
+.eula > ol > li > h2 {
 	font-family: 'Magik';
 	color: #84A6C1 !important; /*LOGO BLUE*/
 }
