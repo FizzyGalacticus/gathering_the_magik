@@ -184,6 +184,7 @@ hr {
 }
 
 .eula > h1,
+.eula > ol > li,
 .eula > ol > li > h2 {
 	font-family: 'Magik';
 	color: #84A6C1 !important; /*LOGO BLUE*/
