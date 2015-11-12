@@ -155,7 +155,8 @@ table > thead > .coolFont > th {
 }
 
 .contact > .contact-body,
-.free-features {
+.free-features,
+.premium-features {
 	background-color: #C8C8D0; /*BLUEISH GREY*/
 	border-color: #C8C8D0; /*BLUEISH GREY*/
 	border-radius: 5px;
@@ -167,11 +168,13 @@ table > thead > .coolFont > th {
 }
 
 .contact > .contact-body > p,
-.free-features {
+.free-features,
+.premium-features {
 	padding: 5px;
 }
 
-.free-features > h1 {
+.free-features > h1,
+.premium-features > h1 {
 	font-family: 'Magik';
 }
 
