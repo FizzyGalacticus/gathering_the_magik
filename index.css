@@ -176,3 +176,14 @@ table > thead > .coolFont > th {
 hr {
 	border-top-color: #41261B; /*DARK BROWN*/
 }
+
+.eula > p,
+.intro > p {
+	color: black;
+}
+
+.eula > h1,
+.eula > h2 {
+	font-family: 'Magik';
+	color: #84A6C1 !important; /*LOGO BLUE*/
+}
