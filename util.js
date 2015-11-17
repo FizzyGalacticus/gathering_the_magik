@@ -118,7 +118,6 @@ function calculateContributions() {
 }
 
 resetBase();	
+resizeBorder();
 getPage('navigation');
 getPage('home');
-
-window.onresize();
