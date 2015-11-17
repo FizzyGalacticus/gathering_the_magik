@@ -50,6 +50,7 @@ function resizeBorder() {
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
 	borderDiv.css('border-width', newWidth + 'px');
+	$("#whitepaper-iframe").width($(".whitepaper").width());
 }
 
 $(document).on("keypress", function(e) {
