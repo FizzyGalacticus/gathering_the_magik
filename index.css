@@ -201,3 +201,7 @@ hr {
 .eula > ol > li {
 	color: #84A6C1 !important; /*LOGO BLUE*/
 }
+
+.btn {
+	font-family: 'Magik' !important;
+}
