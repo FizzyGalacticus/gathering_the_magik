@@ -62,9 +62,11 @@ function resizeBorder() {
 	if (isWebsite()) {
 		$('#border').css("min-height", ($('#border').height()+(window.innerHeight-$('#border').height())));
 
-		var borderY = $('#border').position().top + $('#border').height();
-		var whitepaperTop = $("#whitepaper-iframe").position().top;
-		$("#whitepaper-iframe").height(borderY - $(".whitepaper > .btn").height() - whitepaperTop);
+		if ($('.whitepaper').length) {
+			var borderY = $('#border').position().top + $('#border').height();
+			var whitepaperTop = $("#whitepaper-iframe").position().top;
+			$("#whitepaper-iframe").height(borderY - $(".whitepaper > .btn").height() - whitepaperTop);
+		}
 	};
 }
 
