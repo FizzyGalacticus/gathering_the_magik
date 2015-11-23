@@ -3,13 +3,20 @@ var premium = false;
 var keystrokes = "";
 
 if (document.location.href.indexOf('redmine') > -1) {
-	baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/test/raw/";
+	baseURL = "https://projects.cs.uaf.edu/redmine/projects/cs371_f15_gathering_the_magik/repository/revisions/master/raw/";
 }
 else if(document.location.href.indexOf('www') > -1){
 	baseURL = "http://www.dustindodson.ninja/gathering_the_magik/";
 }
 else {
 	baseURL = "http://dustindodson.ninja/gathering_the_magik/";
+}
+
+function isWebsite() {
+	if(document.location.href.indexOf('redmine') < 0)
+		return true;
+
+	return false;
 }
 
 function getPage(id, checkForAuthorization) {
@@ -51,6 +58,14 @@ function resizeBorder() {
 
 	borderDiv.css('border-width', newWidth + 'px');
 	$("#whitepaper-iframe").width($(".whitepaper").width());
+
+	if (isWebsite()) {
+		$('#border').css("min-height", ($('#border').height()+(window.innerHeight-$('#border').height())));
+
+		var borderY = $('#border').position().top + $('#border').height();
+		var whitepaperTop = $("#whitepaper-iframe").position().top;
+		$("#whitepaper-iframe").height(borderY - $(".whitepaper > .btn").height() - whitepaperTop);
+	};
 }
 
 $(document).on("keypress", function(e) {
