@@ -84,7 +84,7 @@
 }
 
 /*CONTRIBUTION TABLE*/
-table > thead > .coolFont > th {
+.coolFont > * {
 	font-family: 'Magik';
 }
 
