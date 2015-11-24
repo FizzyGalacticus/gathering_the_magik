@@ -62,7 +62,7 @@ function resizeBorder() {
 	if (isWebsite()) {
 		//If we're on the whitepaper page.
 		if($('.documentation-menu > ul  > li.active').text() == "Whitepaper") {
-			//Eventually do stuff here...
+			$('#whitepaper-iframe').height(675) //hard-coded hack for size
 		}
 	};
 }
