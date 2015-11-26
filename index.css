@@ -2,10 +2,6 @@ html, body {
 	height: 100%;
 }
 
-#border {
-	min-height: 100%;
-}
-
 /*CUSTOM FONT*/
 @font-face {
 	font-family: 'Magik';
@@ -123,7 +119,8 @@ html, body {
 }
 
 /*BORDER*/
-#border {
+.border {
+	min-height: 100%;
     border: 10px solid transparent;
     -webkit-border-image: url(resources/images/border.png) round; /* Safari 3.1-5 */
     -o-border-image: url(resources/images/border.png) round; /* Opera 11-12.1 */
@@ -212,4 +209,8 @@ hr {
 
 .btn {
 	font-family: 'Magik' !important;
+}
+
+.guide a {
+	cursor: pointer;
 }
