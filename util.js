@@ -131,6 +131,12 @@ function calculateContributions() {
 	}
 }
 
+function moveToPart(position) {
+	$('html,body').animate({
+		scrollTop: $(position).offset().top
+	}, 'slow');
+}
+
 resetBase();	
 resizeBorder();
 getPage('navigation');
