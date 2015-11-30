@@ -48,13 +48,6 @@
 					        <li><a data-toggle="tab" onclick=""></a></li>
 					    </ul>
 					</li>
-
-					<li class="dropdown">
-					    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onclick="moveToPart('#guide-help-facilities');">Help Facilities<span class="caret"></span></a>
-					    <ul class="dropdown-menu" role="menu">
-					        <li><a data-toggle="tab" onclick=""></a></li>
-					    </ul>
-					</li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -64,12 +57,28 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-introduction">Introduction</a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-introduction">1. Introduction</a>
 				</h4>
 			</div><!-- /.panel-heading -->
 			<div id="guide-panel-introduction" class="panel-collapse collapse in">
 				<div class="panel-body">
-					
+					<h5>1.1 - Purpose and Scope</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>1.2 - Organization</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>1.3 - Points of Contact</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>1.4 - Project References</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>1.5 - Primary Business Functions</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>1.6 - Glossary and Terms</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel-default -->
@@ -79,12 +88,16 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-system-capabilities">System Capabilities</a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-system-capabilities">2. System Capabilities</a>
 				</h4>
 			</div><!-- /.panel-heading -->
 			<div id="guide-panel-system-capabilities" class="panel-collapse collapse in">
 				<div class="panel-body">
-					
+					<h5>2.1 - Purpose</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>2.2 - General Description</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel-default -->
@@ -94,12 +107,22 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-description-of-system-functions">Description of System Functions</a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-description-of-system-functions">3. Description of System Functions</a>
 				</h4>
 			</div><!-- /.panel-heading -->
 			<div id="guide-panel-description-of-system-functions" class="panel-collapse collapse in">
 				<div class="panel-body">
-					
+					<h5>3.1 - Functions and Their Uses</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>3.2 - Detailed Description of Function</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>3.3 - Preparation of Function Inputs</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>3.4 - Results</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel-default -->
@@ -109,12 +132,19 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-operating-instructions">Operating Instructions</a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-operating-instructions">4. Operating Instructions</a>
 				</h4>
 			</div><!-- /.panel-heading -->
 			<div id="guide-panel-operating-instructions" class="panel-collapse collapse in">
 				<div class="panel-body">
-					
+					<h5>4.1 - Initiate Operation</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>4.2 - Maintain Operation</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+					<h5>4.3 - Terminate and Restart Operations</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel-default -->
@@ -124,30 +154,103 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-error-handling">Error Handling</a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-error-handling">5. Error Handling</a>
 				</h4>
 			</div><!-- /.panel-heading -->
 			<div id="guide-panel-error-handling" class="panel-collapse collapse in">
 				<div class="panel-body">
-					
+					<table class="table table-striped">
+					    <thead>
+					        <tr>
+					            <th>Error Code</th>
+					            <th>Meaning</th>
+					            <th>Resolution</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>0001</td>
+					            <td>This error alerts us that the application has crashed. This is usually due to lack of processing or lack of resources.</td>
+					            <td>Try closing non needed applications and stop background updates</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0002</td>
+					            <td>This error is for when Gathering the Magik cannot connect to the network.</td>
+					            <td>Attempt standard reconnecting techniques and restart the application.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0003</td>
+					            <td>This error is for when the user has been banned from a match and continues attempting to join.</td>
+					            <td>Get unbanned or stop trying to join.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0005</td>
+					            <td>This error is received when the User has been deemed mentally defective.</td>
+					            <td>User must provide a doctor’s note authorizing further use of our application.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0006</td>
+					            <td>This error is for any failure that cannot be classified by the other categories.</td>
+					            <td>Try completely closing the Gathering the Magik application, and reopening it.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0007</td>
+					            <td>This error is for testing purposes.</td>
+					            <td>Restart the whole system.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0008</td>
+					            <td>This error means that our application is having “technical” issues.</td>
+					            <td>Please contact us.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0009</td>
+					            <td>This error is for when the user has been banned from using our application yet attempts to use it continue.</td>
+					            <td>Uninstall forever.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0010</td>
+					            <td>This error is given when the application detects long durations of time between restroom breaks.</td>
+					            <td>Relieve yourself.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>0666</td>
+					            <td>Occurs when the device on which our application is installed becomes possessed by an evil spirit.</td>
+					            <td>Please see a priest.</td>
+					        </tr>
+					    </tbody>
+					    <tbody>
+					        <tr>
+					            <td>5318008</td>
+					            <td>This error was programmed by a rogue and immature software developer, and keeps showing back up.</td>
+					            <td>Disregard, we will handle this.</td>
+					        </tr>
+					    </tbody>
+					</table>
+
+					<h5>5.1 - Help Facilities</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel-default -->
 	</div>
-
-	<div id="guide-help-facilities">
-		<div class="panel">
-			<div class="panel-heading">
-				<h4 class="panel-title text-center">
-					<a data-toggle="collapse" data-parent="#accordion" href="#guide-panel-help-facilities">Help Facilities</a>
-				</h4>
-			</div><!-- /.panel-heading -->
-			<div id="guide-panel-help-facilities" class="panel-collapse collapse in">
-				<div class="panel-body">
-					
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel-collapse -->
-		</div><!-- /.panel-default -->
-	</div>
-
 </div>
+
