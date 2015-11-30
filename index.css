@@ -92,6 +92,7 @@ html, body {
 }
 
 /*CONTRIBUTION TABLE*/
+.coolFont,
 .coolFont * {
 	font-family: 'Magik';
 }
