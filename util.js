@@ -53,7 +53,7 @@ function isWebsite() {
 }
 
 function resizeBorder() {
-	var borderDiv = $('#border');
+	var borderDiv = $('.border');
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
 	borderDiv.css('border-width', newWidth + 'px');
