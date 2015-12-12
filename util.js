@@ -45,12 +45,26 @@ function getActiveTabPane() {
 	};
 }
 
+function isWebsite() {
+	if (document.location.href.indexOf('redmine') < 0)
+		return true;
+
+	return false;
+}
+
 function resizeBorder() {
-	var borderDiv = $('#border');
+	var borderDiv = $('.border');
 	var newWidth = ((borderDiv.width() / 50) | 0);
 
 	borderDiv.css('border-width', newWidth + 'px');
 	$("#whitepaper-iframe").width($(".whitepaper").width());
+
+	if (isWebsite()) {
+		//If we're on the whitepaper page.
+		if($('.documentation-menu > ul  > li.active').text() == "Whitepaper") {
+			$('#whitepaper-iframe').height(675) //hard-coded hack for size
+		}
+	};
 }
 
 $(document).on("keypress", function(e) {
@@ -115,6 +129,12 @@ function calculateContributions() {
 		totalElement.innerHTML = (total/elements.length + '%');
 		total = 0;
 	}
+}
+
+function moveToPart(position) {
+	$('html,body').animate({
+		scrollTop: $(position).offset().top
+	}, 'slow');
 }
 
 resetBase();	
