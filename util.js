@@ -69,7 +69,6 @@ function resizeBorder() {
 
 $(document).on("keypress", function(e) {
 	keytyped = String.fromCharCode(e.which);
-	console.log("Key pressed: " + keytyped);
 	e.preventDefault();
 
 	keystrokes = keystrokes + keytyped;
